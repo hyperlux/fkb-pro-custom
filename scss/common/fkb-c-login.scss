@@ -1,4 +1,4 @@
-// FKBC - Login
+s// FKBC - Login
 
 // Modal Login
 
@@ -45,6 +45,7 @@
     }
     .d-modal__body {
       border-radius: var(--d-default-border-radius);
+      background-color: orange;
     }
   }
 }
@@ -62,19 +63,20 @@
 .invites-show .login-welcome-header {
   padding: 1em;
   border-radius: var(--d-default-border-radius);
+  background-color: orange;
 }
 
 // Activate account page
 
 #simple-container {
-  background-color: transparent;
+  background-color: orange;
   @media screen and (max-width: 600px) {
     width: auto;
   }
   // Account page
   .account-created {
     .ac-page {
-      background-color: var(--secondary);
+      background-color: orange;
       .col-form {
         .mobile-view & {
           padding: 0.5em;
@@ -90,7 +92,7 @@
   // Activation page
   .activate-account {
     .perform-activation {
-      background-color: var(--secondary);
+      background-color: orange;
     }
   }
 }

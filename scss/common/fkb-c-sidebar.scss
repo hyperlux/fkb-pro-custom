@@ -6,7 +6,6 @@
   border-radius: 0;
 }
 
-/* Increase spacing between sidebar items */
-.sidebar-section .sidebar-section-item {
-    margin-bottom: 15px; /* Adjust this value as needed */
+.sidebar-custom-sections a {
+    margin-bottom: 15px; /* Add or adjust this line to increase spacing */
 }

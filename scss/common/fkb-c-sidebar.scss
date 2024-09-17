@@ -5,3 +5,8 @@
 .sidebar-more-section-links-details-summary.json-editor-btn-collapse {
   border-radius: 0;
 }
+
+/* Increase spacing between sidebar items */
+.sidebar-section .sidebar-section-item {
+    margin-bottom: 15px; /* Adjust this value as needed */
+}

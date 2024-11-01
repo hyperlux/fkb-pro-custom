@@ -9,3 +9,33 @@
 .sidebar-custom-sections a {
     margin-bottom: 15px; /* Add or adjust this line to increase spacing */
 }
+
+// Make buttons more prominent and add consistent spacing
+.btn-flat.sidebar-more-section-links-details-summary,
+.sidebar-more-section-links-details-summary.json-editor-btn-collapse {
+  border-radius: 4px;
+  padding: 10px 15px;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: background-color 0.2s;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+// Add spacing between sidebar items
+.sidebar-custom-sections {
+  a {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      text-decoration: none;
+    }
+  }
+}

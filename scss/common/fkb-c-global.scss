@@ -117,3 +117,7 @@ img.avatar,
   box-sizing: border-box;
   @include bg-br;
 }
+
+.sidebar-section[data-section-name="categories"] {
+  display: none;
+}

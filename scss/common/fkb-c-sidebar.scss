@@ -33,7 +33,7 @@
   margin-bottom: 8px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   background-color: #e0e0e0;
-  
+
   .sidebar-section-header-text {
     font-weight: 600;
     text-transform: uppercase;
@@ -48,6 +48,7 @@
     border: none;
     opacity: 0.7;
     transition: all 0.2s;
+    background-color: #e0e0e0;
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.1);

@@ -1,68 +1,83 @@
 body.landing-page.reference {
-    text-align: center; /* Horizontally center text */
+  text-align: center;
 }
 
 body.landing-page.reference * {
-    margin: 0 auto; /* Center block elements */
-    display: inline-block; /* Ensure block elements can be centered */
+  margin: 0 auto;
+  display: inline-block;
 }
 
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-        }
-        .logo {
-            height: 50px;
-            margin-right: 10px;
-        }
-        .header-left, .header-right {
-            display: flex;
-            align-items: center;
-        }
-        .header-left img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        .header-left a {
-            text-decoration: none;
-            color: #ff6347;
-            font-weight: bold;
-        }
-        .header-right a {
-            text-decoration: none;
-            color: #000;
-            margin-left: 20px;
-        }
-        .header-right img {
-            height: 30px;
-            border-radius: 50%;
-        }
-        .content {
-            padding: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #007bff;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+.landing-page.reference {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-very-low);
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625em 1.25em;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--primary-low);
+  }
+
+  .logo {
+    height: 3.125em;
+    margin-right: 0.625em;
+  }
+
+  .header-left,
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-left {
+    img {
+      height: 2.5em;
+      margin-right: 0.625em;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--tertiary);
+      font-weight: bold;
+    }
+  }
+
+  .header-right {
+    a {
+      text-decoration: none;
+      color: var(--primary);
+      margin-left: 1.25em;
+    }
+
+    img {
+      height: 1.875em;
+      border-radius: 50%;
+    }
+  }
+
+  .content {
+    padding: 1.25em;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.625em 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--tertiary);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

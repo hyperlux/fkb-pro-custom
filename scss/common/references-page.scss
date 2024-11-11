@@ -1,0 +1,8 @@
+body.landing-page.reference {
+    text-align: center; /* Horizontally center text */
+}
+
+body.landing-page.reference * {
+    margin: 0 auto; /* Center block elements */
+    display: inline-block; /* Ensure block elements can be centered */
+}

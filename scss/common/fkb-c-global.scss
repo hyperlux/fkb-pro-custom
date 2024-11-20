@@ -1,26 +1,39 @@
 // FKBC - Global
 
-// Global
-
+// Enhanced Global Styles
 body {
   background: var(--fkb-bg);
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
-// Resets the Versatille banner modified width on main-outlet
+// Improved Layout Container
 #main > div #main-outlet {
   max-width: 100%;
   width: 100%;
+  padding: 2rem;
+  transition: all 0.3s ease;
 }
 
+// Enhanced Avatar Styles
 img.avatar,
 .card-avatar-placeholder,
 .placeholder-avatar {
   border-radius: var(--d-avatar-border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
+// Modern Toast Notifications
 .fk-d-toasts {
   .fk-d-toast {
     border-radius: var(--d-default-border-radius);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -32,42 +45,57 @@ img.avatar,
   border-radius: var(--d-default-border-radius);
 }
 
+// Enhanced Button Styles
+.btn-default,
 .btn.show-summary {
   background: var(--fkb-btn);
-}
-
-.btn-default {
-  background: var(--fkb-btn);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .list-controls .combo-box .combo-box-header {
   background: var(--secondary);
 }
 
-// Spinner
+// Modern Spinner
 .spinner {
   height: 40px;
   width: 40px;
   border: none;
   box-shadow: inset 0 1px 1px var(--tertiary);
+  animation: spin 0.8s linear infinite;
 }
 
-// Banner
+// Improved Alert Styles
 .alert.alert-info {
   background: var(--tertiary-500);
   border-radius: var(--d-default-border-radius);
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+// Modern Banner Style
 #banner {
   background: var(--tertiary-low);
   border-radius: var(--d-default-border-radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   
-  .lightbox-wrapper,
-  .lightbox-wrapper a.lightbox,
-  .lightbox-wrapper img {
+  .lightbox-wrapper {
     border-radius: var(--d-default-border-radius);
-    max-width: 100%;
-    height: auto;
+    overflow: hidden;
+    
+    img {
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
   }
 }
 
@@ -80,15 +108,13 @@ img.avatar,
   }
 }
 
-// Modal
-.dialog-content {
-  border-radius: var(--d-default-border-radius);
-  outline: 0;
-}
-
+// Enhanced Modal Design
 .d-modal {
   &__container {
     border-radius: var(--d-default-border-radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
     
     .mobile-view & {
       border-radius: var(--d-default-border-radius) var(--d-default-border-radius) 0 0;
@@ -104,15 +130,31 @@ img.avatar,
   }
 }
 
-// Admin
-.admin-controls .nav-pills > li a.active {
-  background: transparent;
+// Enhanced Admin Controls
+.admin-controls {
+  .nav-pills > li a.active {
+    background: transparent;
+    position: relative;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--tertiary);
+    }
+  }
 }
 
+// Modern Box Style
 .boxed.white {
-  padding: 1em;
+  padding: 1.5rem;
   box-sizing: border-box;
   @include bg-br;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sidebar-section[data-section-name="messages"],
@@ -120,4 +162,9 @@ img.avatar,
 .sidebar-section[data-section-name="chat-dms"],
 .sidebar-section[data-section-name="categories"] {
   display: none;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
